@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    Fit for Fun Fitness Club
+    CIS 130
+    Author: Anthony Nelson
+    Date: 6/20/2024
+    Filename: info.html
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitforFunFitnessClub_info.html</title>
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <script src="https://kit.fontawesome.com/e577def877.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="img/logo.png" alt="logo" width="200"></a>
+    </header>
+    <nav>
+        <ul class="navlist">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="classes.html">Training</a></li>
+            <li><a href="info.html">Join Now</a></li>
+        </ul>
+    </nav>
+    <form method="get" action="thankyou.html" class="zipcode">
+        <fieldset>
+            <legend>FIND A GYM</legend>
+            <input type="text" name="zipcode" id="zipcode" pattern="[0-9]{5}" required
+                placeholder="enter your zip code">
+                <button type="submit" class="zipsubmit">
+                    <i class="fa-solid fa-magnifying-glass" title="Submit"></i>
+                  </button>
+        </fieldset>
+    </form>
+    <h2 class="subheader">Join Now To Claim Your 1-Month Pass FREE </h2>
+    <p class="infop">Try out our facilities for up to 1 month at no cost to you.<br> We would love to show you around!
+        New customers
+        only. </p>
+    <div class="container">
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend>Your Name</legend>
+                <input autofocus type="text" name="fname" id="fname" required placeholder="First">
+                <input type="text" name="lname" id="lname" required placeholder="Last">
+            </fieldset>
+            <fieldset>
+                <legend>Phone</legend>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required
+                    placeholder="required">
+            </fieldset>
+            <fieldset>
+                <legend>Email</legend>
+                <input type="email" name="email" id="email" required placeholder="*required">
+            </fieldset>
+            <fieldset>
+                <legend>Preferred Contact Method</legend>
+                <select name="contactmethod" id="contactmethod" required>
+                    <option value="">*required</option>
+                    <option value="Text">Text</option>
+                    <option value="Phone">Phone</option>
+                    <option value="Email">Email</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>Check Class Availability</legend>
+                <input type="checkbox" id="crosstraining" name="course" value="crosstraining">
+                <label for="crosstraining">CrossTraining</label>
+                <input type="checkbox" id="sprint" name="course" value="sprint">
+                <label for="sprint">Sprint</label>
+                <input type="checkbox" id="spin" name="course" value="spin">
+                <label for="spin">Spin</label>
+                <input type="checkbox" id="bodypump" name="course" value="bodypump">
+                <label for="bodypump">BodyPump</label>
+                <input type="checkbox" id="bodycombat" name="course" value="bodycombat">
+                <label for="bodycombat">BodyCombat</label>
+                <input type="checkbox" id="stepinterval" name="course" value="stepinterval">
+                <label for="stepinterval">StepInterval</label>
+                <input type="checkbox" id="advcrosstraining" name="course" value="advcrosstraining">
+                <label for="advcrosstraining">Adv.CrossTraining</label>
+                <input type="checkbox" id="mixxedfit" name="course" value="mixxedfit">
+                <label for="mixxedfit">MixxedFIT</label>
+                <input type="checkbox" id="zumba" name="course" value="zumba">
+                <label for="zumba">Zumba</label>
+            </fieldset>
+            <fieldset>
+                <legend>AM or PM Availability</legend>
+                <input type="radio" id="AM" name="meridien" value="AM" required>
+                <label for="AM">AM</label>
+                <input type="radio" id="PM" name="meridien" value="PM" required>
+                <label for="PM">PM</label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional Info</legend>
+                <textarea name="info" id="info" rows="5" cols="50" placeholder="Any additional info..."></textarea>
+            </fieldset>
+            <button type="submit" class="infosubmit">Continue
+                <i class="fa-solid fa-arrow-right" title="Submit"></i>
+              </button>
+        </form>
+    </div>
+    <footer>
+        <nav class="socialmedia">
+            <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+            <a href="https://x.com"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+        </nav>
+        <address>
+            <a href="tel:7045552188"><i class="fa-solid fa-phone"></i>(704)555-2188</a><br>
+            <a href="mailto:contact@example.com"><i class="fas fa-envelope"></i>Contact us</a>
+        </address>
+        <div class="copyright">
+            <img src="img/logo.png" alt="logo" width="200">
+            <p>&copy; 2024 Fit for Fun Fitness Club <br> All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

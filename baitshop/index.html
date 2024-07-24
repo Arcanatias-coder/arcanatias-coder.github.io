@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Live Baitshop
+    CIS 130
+    Author: Anthony Nelson
+    Date: 7/10/2024
+    Filename: index.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live_Baitshop_index</title>
+    <script src="https://kit.fontawesome.com/e577def877.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="img/logo.png" alt="logo">
+            <div>
+                <h1>Howard's</h1>
+                <h2>Lakeside General Store</h2>
+            </div>
+            <div class="account_cart">
+                <button class="open-button" onclick="openForm()"><i class="fa-solid fa-user"
+                        title="Account"></i></button>
+                <div class="form-popup" id="myForm">
+                    <form method="get" action="thankyou.html" class="form-container">
+                        <button type="button" class="btn cancel" onclick="closeForm()"><i
+                                class="fa-solid fa-xmark"></i></button>
+                        <h2>Login</h2>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <button type="submit" class="btn">Login</button>
+                        <p>Don't have an account?<a href="signup.html"> Create One</a></p>
+                    </form>
+                    <script>
+                        function openForm() {
+                            document.getElementById("myForm").style.display = "block";
+                        }
+                        function closeForm() {
+                            document.getElementById("myForm").style.display = "none";
+                        }
+                    </script>
+                </div>
+                <a class="cart" href="#"><i class="fa-solid fa-cart-shopping" title="Cart"></i></a>
+            </div>
+        </header>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+        <div class="main_nav">
+            <a style="background: rgb(20,61,86, 0.5);" href="index.html">Home</a>
+            <a href="bait.html">Bait</a>
+            <a href="services.html">Services</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="#">About Us</a>
+        </div>
+        </div>
+        <div class="index_slideshow">
+            <h2>Welcome to Lakeside</h2>
+            <p>Located right next to the Clarence J. Brown Reservoir inside of Buck Creek State Park, Lakeside General
+                Store has served our community for over 20 years. Whether you are fishing, hunting, or camping, we got
+                you covered from supplies and equipment to licenses and permits.</p>
+            <div class="slideshow_container">
+                <div class="mySlides fade"> <img class="slides" src="img/slide_1.png" style="width:100%" alt="slide_1">
+                </div>
+                <div class="mySlides fade"> <img class="slides" src="img/slide_2.png" style="width:100%" alt="slide_2">
+                </div>
+                <div class="mySlides fade"> <img class="slides" src="img/slide_3.png" style="width:100%" alt="slide_3">
+                </div>
+                <div class="mySlides fade"> <img class="slides" src="img/slide_4.png" style="width:100%" alt="slide_4">
+                </div>
+                <div class="mySlides fade"> <img class="slides" src="img/slide_5.png" style="width:100%" alt="slide_5">
+                </div>
+            </div>
+            <div>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                    let i;
+                    let slides = document.getElementsByClassName("mySlides");
+                    let dots = document.getElementsByClassName("dot");
+                    for (i = 0; i < slides.length; i++) {
+                        slides[i].style.display = "none";
+                    }
+                    slideIndex++;
+                    if (slideIndex > slides.length) { slideIndex = 1 }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i].className.replace(" active", "");
+                    }
+                    slides[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " active";
+                    setTimeout(showSlides, 4000);
+                }
+            </script>
+        </div>
+        <div class="empty-box"></div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.7087848155443!2d-83.75041019999999!3d39.94790319999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x883f506fbf45c9cd%3A0x73be1ce4b5636f4b!2s1919%20Croft%20Rd%2C%20Springfield%2C%20OH%2045503!5e0!3m2!1sen!2sus!4v1720650857011!5m2!1sen!2sus"
+                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+            <h2>Come &amp; See Us!</h2>
+            <address>
+                <p>
+                    1919 Croft Rd <br>
+                    Springfield, Ohio 45503
+                </p>
+            </address>
+        </div>
+        <div class="empty-box"></div>
+        <div class="featured_video">
+            <h2>This Week's Featured Video!</h2>
+            <video width="640" height="480" controls>
+                <source src="video/featured_video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <footer>
+            <div class="sub">
+                <h2>Subscribe &amp; Save</h2>
+                <p>Subscribe to get special offers!</p>
+                <form method="get" action="thankyou.html" class="subscribe">
+                    <fieldset>
+                        <input type="email" name="email" id="subscribe" placeholder="Enter your email" required>
+                        <button type="submit" class="subscribe_submit">Subscribe <i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="social_media">
+                <h2>Follow Us</h2>
+                <a
+                    href="https://www.facebook.com/Howards-Lakeside-General-Store-424457621477830/?view_public_for=424457621477830"><i
+                        class="fa-brands fa-square-facebook" title="Howard's Lakeside on Facebook"></i></a>
+                <a href="https://x.com"><i class="fa-brands fa-square-x-twitter" title="Howard's Lakeside on X"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"
+                        title="Howard's Lakeside on Instagram"></i></a>
+                <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"
+                        title="Howard's Lakeside on TikTok"></i></a>
+            </div>
+            <div class="contact">
+                <p>
+                    <i class="fa-solid fa-location-dot"></i> 1919 Croft Rd <br>
+                    Springfield, Ohio 45503
+                </p>
+                <a href="tel:9375051037"><i class="fa-solid fa-phone"></i>(937) 505-1037</a> <br>
+                <a href="mailto:HowardsLakeside@Gmail.com"><i class="fas fa-envelope"></i>HowardsLakeside@Gmail.com</a>
+                <br>
+            </div>
+            <div class="footer_info">
+                <a href="#">Blog</a> <br>
+                <a href="#">Privacy</a> <br>
+                <a href="#">Our Staff</a> <br>
+                <a href="#">Refund Policy</a> <br>
+                <a href="#">Shipping Policy</a> <br>
+                <a href="#">Terms of Service</a>
+            </div>
+            <img src="img/logo.png" alt="logo">
+        </footer>
+        <p class="copy">
+            &copy; 2024 Howard's, Inc., a Small Business OH. Group company. All rights reserved. Howard's and
+            the Howards's Logo are trademarks or registered trademarks of Howard's, Inc
+        </p>
+    </div>
+</body>
+
+</html>

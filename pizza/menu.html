@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    Cheech's Flexible Pizza Parlor    
+    CIS 130
+    Author: Anthony Nelson
+    Date 7/3/2024
+    Filename: menu.html
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheech's Flexible Pizza Parlor_menu</title>
+    <script src="https://kit.fontawesome.com/e577def877.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+
+<body>
+    <header>
+        <h1>Cheech's</h1>
+        <h2>Pizza</h2>
+        <div class="zipcode">
+            <form method="get" action="thankyou.html" class="zipcode">
+                <fieldset>
+                    <p>Find a Location</p>
+                    <input type="text" name="zipcode" id="zipcode" pattern="[0-9]{5}" required
+                        title="enter your zipcode">
+                    <button type="submit" class="zipsubmit">
+                        <i class="fa-solid fa-magnifying-glass" title="Submit"></i>
+                    </button>
+                </fieldset>
+            </form>
+        </div>
+        <h2 class="order_now"><a href="order.html">Order Now</a></h2>
+    </header>
+    <nav class="main_nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            <li><a href="#">Our Locations</a></li>
+        </ul>
+    </nav>
+    <section id="cols_2">
+        <div>
+            <img src="img/four_cheese.png" alt="">
+            <h2>Cheech's Cheese</h2>
+            <p>marinara sauce, blend of mozzarella, romana &amp; asiago cheese</p>
+        </div>
+        <div>
+            <img src="img/hawaiian.png" alt="">
+            <h2>Hawaiian</h2>
+            <p>marinara sauce, caramelized pineapple, canadian bacon, crumbled bacon, &amp; extra mozzarella</p>
+        </div>
+        <div>
+            <img src="img/margherita.png" alt="">
+            <h2>Classic Margherita</h2>
+            <p>light marinara sauce, chopped basil, slice tomatoes, feta &amp; mozzarella cheese with balsamic reduction
+                finish</p>
+        </div>
+        <div>
+            <img src="img/meat_trio.png" alt="">
+            <h2>Meat Trio</h2>
+            <p>marinara sauce, pepperoni, italian sausage, crumbled bacon, &amp; extra mozzarella cheese</p>
+        </div>
+        <div>
+            <img src="img/spinach_ricotta.png" alt="">
+            <h2>Spinach Ricotta</h2>
+            <p>light marinara sauce, minced garlic, fresh spinach, sliced roma tomatoes, ricotta &amp; mozzarella cheese
+            </p>
+        </div>
+        <div>
+            <img src="img/supreme.png" alt="">
+            <h2>Supreme</h2>
+            <p>marinara sauce, pepperoni, italian sausage, green peppers, red onions &amp; mozzarella cheese</p>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_info">
+            <img class="logo" src="img/logo.png" alt="logo">
+            <img class="coke" src="img/coke.png" alt="coca_cola_logo">
+            <address>
+                <a href="mailto:contact@example.com"><i class="fas fa-envelope"></i>Contact us</a> <br>
+                <a href="tel:7045552188"><i class="fa-solid fa-phone"></i>(704)555-2188</a>
+            </address>
+            <nav class="socialmedia_2">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://x.com"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+            </nav>
+        </div>
+        <p>
+            &copy; 2024 Cheech's Pizza, Inc., a Fine Foods Group company. All rights reserved. Cheech's and
+            the Cheech's Logo are trademarks or registered trademarks of Cheech's Pizza, Inc
+        </p>
+    </footer>
+</body>
+
+</html>

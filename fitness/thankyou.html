@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!--
+    Fit for Fun Fitness Club
+    CIS 130
+    Author: Anthony Nelson
+    Date: 6/20/2024
+    Filename: thankyou.html
+    -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function printQuery() {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        document.write(pair[0] + ": " + pair[1] + "<br />");
+      }
+    }
+  </script>
+  <title>FitforFunFitnessClub_thankyou.html</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <script src="https://kit.fontawesome.com/e577def877.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <a href="index.html"><img src="img/logo.png" alt="logo" width="200"></a>
+  </header>
+  <nav>
+    <ul class="navlist">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="classes.html">Training</a></li>
+      <li><a href="info.html">Join Now</a></li>
+    </ul>
+  </nav>
+  <form method="get" action="thankyou.html" class="zipcode">
+    <fieldset>
+      <legend>FIND A GYM</legend>
+      <input type="text" name="zipcode" id="zipcode" pattern="[0-9]{5}" required placeholder="enter your zip code">
+      <button type="submit" class="zipsubmit">
+        <i class="fa-solid fa-magnifying-glass" title="Submit"></i>
+      </button>
+    </fieldset>
+  </form>
+  <h2 class="subheader">Join Now To Claim Your 1-Month Pass FREE </h2>
+  <div class="thankyoucontainer">
+    <h2>Thank you for your interest in our facilities! Can't wait to see you out here!</h2>
+
+    <script>
+      printQuery();
+    </script>
+    <a class="back" href="index.html"><i class="fa-solid fa-arrow-rotate-left"></i>Home</a>
+  </div>
+  <footer>
+    <nav class="socialmedia">
+      <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+      <a href="https://x.com"><i class="fa-brands fa-square-x-twitter"></i></a>
+      <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+      <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+    </nav>
+    <address>
+      <a href="tel:7045552188"><i class="fa-solid fa-phone"></i>(704)555-2188</a><br>
+      <a href="mailto:contact@example.com"><i class="fas fa-envelope"></i>Contact us</a>
+    </address>
+    <div class="copyright">
+      <img src="img/logo.png" alt="logo" width="200">
+      <p>&copy; 2024 Fit for Fun Fitness Club <br> All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+
+</html>

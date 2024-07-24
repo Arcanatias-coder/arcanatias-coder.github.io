@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Live Baitshop
+    CIS 130
+    Author: Anthony Nelson
+    Date: 7/10/2024
+    Filename: signup.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live_Baitshop_signup</title>
+    <script src="https://kit.fontawesome.com/e577def877.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="img/logo.png" alt="logo">
+            <div>
+                <h1>Howard's</h1>
+                <h2>Lakeside General Store</h2>
+            </div>
+            <div class="account_cart">
+                <button class="open-button" onclick="openForm()"><i class="fa-solid fa-user"
+                        title="Account"></i></button>
+                <div class="form-popup" id="myForm">
+                    <form method="get" action="thankyou.html" class="form-container">
+                        <button type="button" class="btn cancel" onclick="closeForm()"><i
+                                class="fa-solid fa-xmark"></i></button>
+                        <h2>Login</h2>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <button type="submit" class="btn">Login</button>
+                        <p>Don't have an account?<a href="signup.html"> Create One</a></p>
+                    </form>
+                    <script>
+                        function openForm() {
+                            document.getElementById("myForm").style.display = "block";
+                        }
+                        function closeForm() {
+                            document.getElementById("myForm").style.display = "none";
+                        }
+                    </script>
+                </div>
+                <a class="cart" href="#"><i class="fa-solid fa-cart-shopping" title="Cart"></i></a>
+            </div>
+        </header>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+            <div class="main_nav">
+                <a href="index.html">Home</a>
+                <a href="bait.html">Bait</a>
+                <a href="services.html">Services</a>
+                <a style="background: rgb(20,61,86, 0.5);" href="signup.html">Sign Up</a>
+                <a href="#">About Us</a>
+            </div>
+        </div>
+        <div class="signup">
+            <form class="signup_form" method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>First Name</legend>
+                    <input type="text" name="fname" id="fname" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Last Name</legend>
+                    <input type="text" name="lname" id="lname" required>
+                </fieldset>
+                <fieldset>
+            
+                    <input type="email" name="email" id="email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Password</legend>
+                    <input type="password" name="psw" id="psw" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Repeat Password</legend>
+                    <input type="password" name="psw_repeat" id="psw_repeat" required>
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" name="alerts" id="alerts" value="getalerts">Sign up for text alerts
+                </fieldset>
+                <fieldset>
+                    <legend>Phone Number</legend>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}">
+                </fieldset>
+                <fieldset>
+                    <input type="checkbox" name="tos" id="tos" value="agree" required> Agree to our <a href="#">Terms of
+                        Service</a>
+                </fieldset>
+                <button type="submit" class="signup_btn">Submit <i class="fa-solid fa-arrow-right"></i></button>
+            </form>
+            <img class="logo_plus" src="img/logo+.png" alt="logo+">
+            <div class="benefits">
+                <h2>Member Benefits Include</h2>
+                <ul>
+                    <li><i class="fa-solid fa-check" style="color: #63E6BE;"></i> FREE License Laminate</li>
+                    <li><i class="fa-solid fa-check" style="color: #63E6BE;"></i> 1 Yearly Campsite Voucher </li>
+                    <li><i class="fa-solid fa-check" style="color: #63E6BE;"></i> FREE Monthly Respool Service (Limit 2)
+                    </li>
+                    <li><i class="fa-solid fa-check" style="color: #63E6BE;"></i> Buy 2 get 1 FREE on Select Bait
+                        Quantities</li>
+                    <li><i class="fa-solid fa-check" style="color: #63E6BE;"></i> Members Only Unique Monthly Special
+                        Offers</li>
+                </ul>
+            </div>
+        </div>
+        <footer>
+            <div class="sub">
+                <h2>Subscribe &amp; Save</h2>
+                <p>Subscribe to get special offers!</p>
+                <form method="get" action="thankyou.html" class="subscribe">
+                    <fieldset>
+                        <input type="email" name="email" id="subscribe" placeholder="Enter your email" required>
+                        <button type="submit" class="subscribe_submit">Subscribe <i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="social_media">
+                <h2>Follow Us</h2>
+                <a
+                    href="https://www.facebook.com/Howards-Lakeside-General-Store-424457621477830/?view_public_for=424457621477830"><i
+                        class="fa-brands fa-square-facebook" title="Howard's Lakeside on Facebook"></i></a>
+                <a href="https://x.com"><i class="fa-brands fa-square-x-twitter" title="Howard's Lakeside on X"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"
+                        title="Howard's Lakeside on Instagram"></i></a>
+                <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"
+                        title="Howard's Lakeside on TikTok"></i></a>
+            </div>
+            <div class="contact">
+                <p>
+                    <i class="fa-solid fa-location-dot"></i> 1919 Croft Rd <br>
+                    Springfield, Ohio 45503
+                </p>
+                <a href="tel:9375051037"><i class="fa-solid fa-phone"></i>(937) 505-1037</a> <br>
+                <a href="mailto:HowardsLakeside@Gmail.com"><i class="fas fa-envelope"></i>HowardsLakeside@Gmail.com</a>
+                <br>
+            </div>
+            <div class="footer_info">
+                <a href="#">Blog</a> <br>
+                <a href="#">Privacy</a> <br>
+                <a href="#">Our Staff</a> <br>
+                <a href="#">Refund Policy</a> <br>
+                <a href="#">Shipping Policy</a> <br>
+                <a href="#">Terms of Service</a>
+            </div>
+            <img src="img/logo.png" alt="logo">
+        </footer>
+        <p class="copy">
+            &copy; 2024 Howard's, Inc., a Small Business OH. Group company. All rights reserved. Howard's and
+            the Howards's Logo are trademarks or registered trademarks of Howard's, Inc
+        </p>
+    </div>
+</body>
+
+</html>

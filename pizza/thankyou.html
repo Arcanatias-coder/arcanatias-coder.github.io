@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!--
+    Cheech's Flexible Pizza Parlor
+    CIS 130
+    Author: Anthony Nelson
+    Date: 7/4/2024
+    Filename: thankyou.html
+    -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script>
+    function printQuery() {
+      var query = window.location.search.substring(1);
+      var vars = query.split("&");
+
+      for (var i = 0; i < vars.length; i++) {
+        var pair = vars[i].split("=");
+        document.write(pair[0] + ": " + pair[1] + "<br />");
+      }
+    }
+  </script>
+  <title>Cheech's Flexible Pizza Parlor_thankyou</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <script src="https://kit.fontawesome.com/e577def877.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Cheech's</h1>
+    <h2>Pizza</h2>
+    <div class="zipcode">
+      <form method="get" action="thankyou.html" class="zipcode">
+        <fieldset>
+          <p>Find a Location</p>
+          <input type="text" name="zipcode" id="zipcode" pattern="[0-9]{5}" required title="enter your zipcode">
+          <button type="submit" class="zipsubmit">
+            <i class="fa-solid fa-magnifying-glass" title="Submit"></i>
+          </button>
+        </fieldset>
+      </form>
+    </div>
+    <h2 class="order_now"><a href="order.html">Order Now</a></h2>
+  </header>
+  <nav class="main_nav">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="order.html">Order Online</a></li>
+      <li><a href="#">Our Locations</a></li>
+    </ul>
+  </nav>
+  <section class="thank_you">
+  <h2>Thank You</h2>
+  <p>unfortunately someone spilled marinara on the server</p>
+  </section>
+  <script>
+    printQuery();
+  </script>
+  <footer>
+    <div class="footer_info">
+      <img class="logo" src="img/logo.png" alt="logo">
+      <img class="coke" src="img/coke.png" alt="coca_cola_logo">
+      <address>
+        <a href="mailto:contact@example.com"><i class="fas fa-envelope"></i>Contact us</a> <br>
+        <a href="tel:7045552188"><i class="fa-solid fa-phone"></i>(704)555-2188</a>
+      </address>
+      <nav class="socialmedia_2">
+        <h2>Follow Us</h2>
+        <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="https://x.com"><i class="fa-brands fa-square-x-twitter"></i></a>
+        <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+      </nav>
+    </div>
+    <p>
+      &copy; 2024 Cheech's Pizza, Inc., a Fine Foods Group company. All rights reserved. Cheech's and
+      the Cheech's Logo are trademarks or registered trademarks of Cheech's Pizza, Inc
+    </p>
+  </footer>
+</body>
+
+</html>

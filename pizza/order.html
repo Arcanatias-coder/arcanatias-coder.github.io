@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+    Cheech's Flexible Pizza Parlor    
+    CIS 130
+    Author: Anthony Nelson
+    Date 7/3/2024
+    Filename: order.html
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheech's Flexible Pizza Parlor_order</title>
+    <script src="https://kit.fontawesome.com/e577def877.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/logo.png">
+</head>
+
+<body>
+    <header>
+        <h1>Cheech's</h1>
+        <h2>Pizza</h2>
+        <div class="zipcode">
+            <form method="get" action="thankyou.html" class="zipcode">
+                <fieldset>
+                    <p>Find a Location</p>
+                    <input type="text" name="zipcode" id="zipcode" pattern="[0-9]{5}" required
+                        title="enter your zipcode">
+                    <button type="submit" class="zipsubmit">
+                        <i class="fa-solid fa-magnifying-glass" title="Submit"></i>
+                    </button>
+                </fieldset>
+            </form>
+        </div>
+        <h2 class="order_now"><a href="order.html">Order Now</a></h2>
+    </header>
+    <nav class="main_nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="order.html">Order Online</a></li>
+            <li><a href="#">Our Locations</a></li>
+        </ul>
+    </nav>
+    <section id="cols">
+        <div class="left_col">
+            <h2>Order Now</h2>
+            <form method="get" action="thankyou.html" class="form_order">
+                <fieldset>
+                    <legend>Name</legend>
+                    <input type="text" name="fname" id="fname" required placeholder="*" title="First">
+                    <input type="text" name="lname" id="lname" required placeholder="*" title="Last">
+                </fieldset>
+                <fieldset>
+                    <legend>Phone Number</legend>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required
+                        placeholder="*" title="Area code first">
+                </fieldset>
+                <fieldset>
+                    <legend>Choose your Pizza</legend>
+                    <select name="pizza_choice" id="pizza_choice" required title="Choose one...">
+                        <option value="" disabled selected>*</option>
+                        <option value="">Meat Trio</option>
+                        <option value="">Meat Trio</option>
+                        <option value="">Meat Trio</option>
+                        <option value="">Meat Trio</option>
+                        <option value="">Meat Trio</option>
+                        <option value="">Meat Trio</option>
+                    </select>
+                    <input type="number" name="quantity" id="quantity" min="1" max="10" required placeholder="*"
+                        title="Quantity">
+                </fieldset>
+                <fieldset>
+                    <legend>Order Timing</legend>
+                    <input type="radio" name="timing" id="now" value="now" required>
+                    <label for="now">Now</label>
+                    <input type="radio" name="timing" id="later" value="later" required>
+                    <label for="later">Later</label>
+                    <input type="date" name="date" id="date">
+                    <label for="date">Date</label>
+                    <input type="time" name="order_time" id="order_time">
+                    <label for="order_time">Time</label>
+                </fieldset>
+                <fieldset>
+                    <legend>Delivery Instructions</legend>
+                    <textarea name="info" id="info" rows="6" cols="20"></textarea>
+                </fieldset>
+                <button type="submit" class="order_submit">Place Order
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <p>&#x2217;Ordering more than 10 pizzas? Please call your location to schedule your order in advance.
+                </p>
+            </form>
+        </div>
+        <div class="right_col">
+            <h2>Sign Up &amp; Earn Rewards</h2>
+            <form method="get" action="thankyou.html" class="sign_up">
+                <fieldset>
+                    <legend>Email</legend>
+                    <input type="email" name="email" id="email" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Password</legend>
+                    <input type="password" name="psw" id="psw" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Repeat Password</legend>
+                    <input type="password" name="psw_repeat" id="psw_repeat" required>
+                </fieldset>
+                <label>
+                    <input type="checkbox" name="remember" id="remember_me"> Remember me
+                </label>
+                <p>By creating an account you agree to our <a href="#">Terms &amp; Privacy</a>.</p>
+                <button type="submit" class="signupbtn">Sign Up</button>
+                <p>Already have an account? <a href="#">Sign in</a></p>
+            </form>
+            <aside>
+                <img src="img/portrait_placeholder.png" alt="">
+                <p>
+                    Krysta K. &nbsp; &nbsp; &starf;&starf;&starf;&starf;&star; <br> 01/18/2024
+                </p>
+                <p>
+                    "great pizza, great price, speedy delivery!"
+                </p>
+            </aside>
+            <nav class="socialmedia">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://x.com"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+            </nav>
+        </div>
+    </section>
+    <footer>
+        <div class="footer_info">
+            <img class="logo" src="img/logo.png" alt="logo">
+            <img class="coke" src="img/coke.png" alt="coca_cola_logo">
+            <address>
+                <a href="mailto:contact@example.com"><i class="fas fa-envelope"></i>Contact us</a> <br>
+                <a href="tel:7045552188"><i class="fa-solid fa-phone"></i>(704)555-2188</a>
+            </address>
+            <nav class="socialmedia_2">
+                <h2>Follow Us</h2>
+                <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://x.com"><i class="fa-brands fa-square-x-twitter"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"></i></a>
+            </nav>
+        </div>
+        <p>
+            &copy; 2024 Cheech's Pizza, Inc., a Fine Foods Group company. All rights reserved. Cheech's and
+            the Cheech's Logo are trademarks or registered trademarks of Cheech's Pizza, Inc
+        </p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,365 @@
+/*
+        About A Company
+        CIS 130
+        Author: Anthony Nelson
+        Date: 6/12/2024
+        Filename: index.html
+*/
+
+body {
+    background-color: #D2D7DF;
+    border: solid 5px;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1020px;
+        min-width: 640px;
+}
+
+body header {
+    background-color: #D2D7DF;
+    background-image: url(img/background.png);
+    background-size: cover;
+    opacity: 0.9;
+    text-align: center;
+    border-bottom: solid 10px;
+    margin-top: -25px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+body header:hover {
+    opacity: 1;
+}
+
+body header a {
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+    top: 10px;
+    z-index: 100;
+}
+
+body header h2 {
+    font-size: 0.5em;
+    position: relative;
+    bottom: 25px;
+    left: 25px;
+}
+
+body nav a {
+    color: #000000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+body nav a:hover {
+    color: #FFFFFF;
+}
+
+.navlist {
+    list-style-type: none;
+    font-size: 1.25em;
+    margin-top: -80px;
+    margin-left: -30px;
+    position: fixed;
+    overflow-y: auto;
+    z-index: 100;
+}
+
+.socialmedia {
+    font-size: 2em;
+    float: right;
+    margin-top: -85px;
+    margin-right: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+
+}
+
+.arth2 {
+    background-color: #AAAAAA;
+    border-bottom: solid 10px #000000;
+    font-size: 1.5em;
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    padding: 20px;
+}
+
+.mainarticle1 {
+    line-height: 0;
+    border: solid 10px #6595e3;
+    box-shadow: 5px 10px #00000088;
+    float: right;
+    margin-right: 10px;
+}
+
+.mainarticle2 {
+    font-weight: bold;
+    background-color: #AAAAAA;
+    border: solid 5px #00000000;
+    box-shadow: 5px 10px #00000088;
+    width: 350px;
+    position: relative;
+    bottom: 10px;
+    padding: 10px;
+    margin-top: auto;
+    margin-left: 10px;
+}
+
+.mainarticle3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    background-color: #AAAAAA;
+    border-top: groove 10px #5556575b;
+    border-bottom: solid 10px #5556575b;
+    margin-top: -40px;
+}
+
+.mainarticle4 {
+    font-size: 1.25em;
+    font-weight: bold;
+    background-color: #AAAAAA;
+    border-bottom: ridge 10px #5556575b;
+    padding: 30px;
+    margin-top: -25px;
+}
+
+.computers {
+    position: relative;
+    bottom: 66px;
+    right: 5px
+}
+
+.computers img {
+    float: right;
+    width: 25%;
+    border: groove 5px #6595e3;
+}
+
+.otherdevice {
+    position: relative;
+    bottom: 65px;
+    right: 5px
+}
+
+.otherdevice img {
+    float: right;
+    width: 25%;
+    border: groove 5px #6595e3;
+}
+
+.pc2 {
+    position: absolute;
+    top: 120px;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+
+}
+
+.mac2 {
+    position: absolute;
+    top: 60px;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.android2 {
+    position: absolute;
+    top: 90px;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.tablet2 {
+    position: absolute;
+    top: 60px;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    font-size: 15px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.fa-ul {
+    background-color: #AAAAAA;
+    ;
+    border: solid 15px #00000000;
+    box-shadow: 5px 10px #00000088;
+    font-size: 0.95em;
+    text-decoration: none;
+    width: 350px;
+    position: relative;
+    bottom: 5px;
+    left: -25px;
+}
+
+.fa-ul :not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.options {
+    clear: both;
+    transform: scale(0.8, 0.8);
+}
+
+.options a {
+
+    color: #000000;
+    text-decoration: none;
+    background-color: #D2D7DF;
+    border: solid 2px;
+    border-color: #000000;
+    border-radius: 25px;
+    box-shadow: 5px 5px;
+    padding: 10px;
+    position: relative;
+    bottom: -5px;
+    left: 10px;
+}
+
+.options a:hover {
+    color: #FFFFFF;
+    background-color: #000000;
+}
+
+article h3 {
+    font-size: 1.5em;
+    text-align: center;
+    background-color: #6595e3;
+    border-top: groove 5px #000000;
+    border-bottom: ridge 5px #000000;
+}
+
+article h4 {
+    clear: both;
+    text-align: center;
+    font-size: 1.5em;
+    background-color: #6595e3;
+    border: solid 2px #00000088;
+    width: 380px;
+    position: relative;
+    left: 10px;
+}
+
+.repairoptions {
+    text-align: center;
+    list-style-type: none;
+}
+
+.repairoptions :not(:last-child) {
+    background-color: #6595e3;
+    border-bottom: solid 2px #00000088;
+    border-right: solid 2px #00000088;
+    width: 300px;
+    margin-right: 500px;
+    margin-bottom: 10px;
+}
+
+aside {
+    transform: scale(0.8, 0.8);
+    background-color: #AAAAAA;
+    border: solid 2px;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    bottom: 10px;
+    margin: 10px;
+}
+
+.review img {
+    border: solid 2px;
+    border-radius: 50%;
+    position: relative;
+    top: 40px;
+    left: 30px;
+}
+
+aside p {
+    font-size: 0.60em;
+    font-weight: bold;
+    position: relative;
+    bottom: 50px;
+    left: 150px;
+}
+
+aside blockquote {
+    font-size: 1em;
+    font-weight: bold;
+    position: relative;
+    bottom: 30px;
+    quotes: "\201c" "\201D";
+}
+
+aside blockquote::before {
+    content: open-quote;
+    font-weight: bold;
+}
+
+aside blockquote::after {
+    content: close-quote;
+    font-weight: bold;
+}
+
+body footer {
+    clear: both;
+    background-color: #000000;
+    color: #AAAAAA;
+    font-style: normal;
+    font-weight: bold;
+    margin-bottom: -20px;
+
+
+
+
+}
+
+body footer h3 {
+    position: relative;
+    top: 50px;
+    left: 600px;
+}
+
+body footer address a {
+    color: #AAAAAA;
+    text-decoration: none;
+    position: relative;
+    top: 50px;
+    left: 620px;
+    border: solid 2px;
+    border-radius: 25px;
+    padding: 5px;
+    z-index: 100;
+}
+
+body footer address a:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+}
+
+.logo {
+    position: relative;
+    left: 280px;
+    bottom: 40px;
+    z-index: 10;
+}
+
+footer p {
+    position: relative;
+    bottom: 50px;
+    left: 260px
+}

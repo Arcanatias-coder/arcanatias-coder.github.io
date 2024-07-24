@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Live Baitshop
+    CIS 130
+    Author: Anthony Nelson
+    Date: 7/10/2024
+    Filename: services.html -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live_Baitshop_services</title>
+    <script src="https://kit.fontawesome.com/e577def877.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <img src="img/logo.png" alt="logo">
+            <div>
+                <h1>Howard's</h1>
+                <h2>Lakeside General Store</h2>
+            </div>
+            <div class="account_cart">
+                <button class="open-button" onclick="openForm()"><i class="fa-solid fa-user"
+                        title="Account"></i></button>
+                <div class="form-popup" id="myForm">
+                    <form method="get" action="thankyou.html" class="form-container">
+                        <button type="button" class="btn cancel" onclick="closeForm()"><i
+                                class="fa-solid fa-xmark"></i></button>
+                        <h2>Login</h2>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <input type="password" placeholder="Enter Password" name="psw" required>
+                        <button type="submit" class="btn">Login</button>
+                        <p>Don't have an account?<a href="signup.html"> Create One</a></p>
+                    </form>
+                    <script>
+                        function openForm() {
+                            document.getElementById("myForm").style.display = "block";
+                        }
+                        function closeForm() {
+                            document.getElementById("myForm").style.display = "none";
+                        }
+                    </script>
+                </div>
+                <a class="cart" href="#"><i class="fa-solid fa-cart-shopping" title="Cart"></i></a>
+            </div>
+        </header>
+        <div class="dropdown">
+            <button class="dropbtn"><i class="fa-solid fa-bars"></i></button>
+        <div class="main_nav">
+            <a href="index.html">Home</a>
+            <a href="bait.html">Bait</a>
+            <a style="background: rgb(20,61,86, 0.5);" href="services.html">Services</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="#">About Us</a>
+        </div>
+        </div>
+        <section id="respool">
+            <img src="img/respool.png" alt="respool">
+            <h2>Fishing Line Spooling Service</h2>
+            <p>At Howard's, we understand how important it is to have a successful and enjoyable fishing experience. Let
+                our trained experts respool your reels to get you ready for your next big catch.</p>
+            <p>When you purchase a reel from us we provide the initial spooling service at no cost to you. Up to 200
+                yards of line from our bulk spools.</p>
+            <p>We charge no labor fees for other spooling services. You can bring your own line or pay us for the cost
+                from our bulk spools.</p>
+        </section>
+        <div class="empty-box"></div>
+        <section id="license_information">
+            <div class="fishing_license">
+                <img src="img/fishing.png" alt="fish">
+                <h2>Fishing License Options &amp; Cost</h2>
+                <table>
+                    <tr>
+                        <th colspan="2">Licenses</th>
+                        <th>Cost</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Youth Licenses</th>
+                        <td colspan="2">Persons under 16 are not require to purchase a fishing license</td>
+                    </tr>
+                    <tr>
+                        <td>Resident Youth Lifetime License</td>
+                        <td>$430.56</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="6">Resident Licenses</th>
+                        <td>Resident 1-Day License</td>
+                        <td>$14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Resident 1-Year License</td>
+                        <td>$25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Resident 3-Year License</td>
+                        <td>$72.11</td>
+                    </tr>
+                    <tr>
+                        <td>Resident 5-Year License</td>
+                        <td>$120.18</td>
+                    </tr>
+                    <tr>
+                        <td>Resident 10-Year License</td>
+                        <td>$240.36</td>
+                    </tr>
+                    <tr>
+                        <td>Resident Lifetime License</td>
+                        <td>$599.04</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="4">Resident Senior Licenses</th>
+                        <td>Resident 1-Year License</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Resident 3-Year License</td>
+                        <td>$27.04</td>
+                    </tr>
+                    <tr>
+                        <td>Resident 5-Year License</td>
+                        <td>$45.07</td>
+                    </tr>
+                    <tr>
+                        <td>Resident Lifetime License</td>
+                        <td>$84.24</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="3">Nonresident Licenses</th>
+                        <td>Nonresident 1-Day License</td>
+                        <td>$14.00</td>
+                    </tr>
+                    <tr>
+                        <td>Nonresident 3-Day License</td>
+                        <td>$25.00</td>
+                    </tr>
+                    <tr>
+                        <td>Nonresident 1-Year License</td>
+                        <td>$50.96</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="hunting_license">
+                <img src="img/deer.png" alt="deer">
+                <h2>Hunting License Options &amp; Cost</h2>
+                <table>
+                    <tr>
+                        <th colspan="2">Licenses</th>
+                        <th>Cost</th>
+                    </tr>
+                    <tr>
+                        <th rowspan="5">Youth Licenses</th>
+                        <td>Resident &amp; Nonresident Youth 1-Year Hunting License</td>
+                        <td>$10.00</td>
+                    </tr>
+                    <tr>
+                        <td>Resident Youth 3-Year Hunting License</td>
+                        <td>$27.04</td>
+                    </tr>
+                    <tr>
+                        <td>Resident Youth 5-Year Hunting License</td>
+                        <td>$45.07</td>
+                    </tr>
+                    <tr>
+                        <td>Resident Youth 10-Year Hunting License</td>
+                        <td>$90.14</td>
+                    </tr>
+                    <tr>
+                        <td>Resident Youth Lifetime Hunting License</td>
+                        <td>$430.56</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="5">Resident Licenses</th>
+                        <td>Resident 1-Year Hunting License</td>
+                        <td>$19.00</td>
+                    </tr>
+                    <tr>
+                        <td>Resident 3-Year Hunting License </td>
+                        <td>$54.08</td>
+                    </tr>
+                    <tr>
+                        <td>Resident 5-Year Hunting License</td>
+                        <td>$90.14</td>
+                    </tr>
+                    <tr>
+                        <td>Resident 10-Year Hunting License</td>
+                        <td>$180.27</td>
+                    </tr>
+                    <tr>
+                        <td>Resident Lifetime Hunting License</td>
+                        <td>$449.28</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">Nonresident Licenses</th>
+                        <td>Nonresident 3-Day Hunting License</td>
+                        <td>$40.56</td>
+                    </tr>
+                    <tr>
+                        <td>Nonresident 1-Year Hunting License</td>
+                        <td>$180.96</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <p class="more_info">For more information, including hunting seasons and other area specific regulations visit
+            <a href="https://ohiodnr.gov/home">ohiodnr.gov/home</a>.</p>
+        <footer>
+            <div class="sub">
+                <h2>Subscribe &amp; Save</h2>
+                <p>Subscribe to get special offers!</p>
+                <form method="get" action="thankyou.html" class="subscribe">
+                    <fieldset>
+                        <input type="email" name="email" id="subscribe" placeholder="Enter your email" required>
+                        <button type="submit" class="subscribe_submit">Subscribe <i
+                                class="fa-solid fa-arrow-right"></i></button>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="social_media">
+                <h2>Follow Us</h2>
+                <a
+                    href="https://www.facebook.com/Howards-Lakeside-General-Store-424457621477830/?view_public_for=424457621477830"><i
+                        class="fa-brands fa-square-facebook" title="Howard's Lakeside on Facebook"></i></a>
+                <a href="https://x.com"><i class="fa-brands fa-square-x-twitter" title="Howard's Lakeside on X"></i></a>
+                <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"
+                        title="Howard's Lakeside on Instagram"></i></a>
+                <a href="https://www.tiktok.com"><i class="fa-brands fa-tiktok"
+                        title="Howard's Lakeside on TikTok"></i></a>
+            </div>
+            <div class="contact">
+                <p>
+                    <i class="fa-solid fa-location-dot"></i> 1919 Croft Rd <br>
+                    Springfield, Ohio 45503
+                </p>
+                <a href="tel:9375051037"><i class="fa-solid fa-phone"></i>(937) 505-1037</a> <br>
+                <a href="mailto:HowardsLakeside@Gmail.com"><i class="fas fa-envelope"></i>HowardsLakeside@Gmail.com</a>
+                <br>
+            </div>
+            <div class="footer_info">
+                <a href="#">Blog</a> <br>
+                <a href="#">Privacy</a> <br>
+                <a href="#">Our Staff</a> <br>
+                <a href="#">Refund Policy</a> <br>
+                <a href="#">Shipping Policy</a> <br>
+                <a href="#">Terms of Service</a>
+            </div>
+            <img src="img/logo.png" alt="logo">
+        </footer>
+        <p class="copy">
+            &copy; 2024 Howard's, Inc., a Small Business OH. Group company. All rights reserved. Howard's and
+            the Howards's Logo are trademarks or registered trademarks of Howard's, Inc
+        </p>
+    </div>
+</body>
+
+</html>
